@@ -7,12 +7,12 @@
     <title>Download your ID card</title>
     <style>
       body {
-      background-image: url(images/background2.png);
+      background-image: url(images/background.png);
       background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh; /* Set the initial height to fill the viewport */
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100vh; /* Set the initial height to fill the viewport */
       background-color: #001220;
       color: #fff;
       padding: 20px;
@@ -22,6 +22,7 @@
     @media only screen and (max-width: 828px) {
   /* Adjust background properties for iPhone XR and similar-sized devices */
   body {
+    background-image: url(images/background2.png);
     background-size: cover;
     background-position: center;
     /*background-attachment:local ; /* or scroll, depending on your preference */
@@ -77,7 +78,7 @@
           <label for="roll">Enter your Roll Number:</label>
           <input type="text" name="roll" id="roll" placeholder="Example: 21BCAE10" class="form-control" autofocus>
         </div>
-        <input type="" value="Download" class="btn" onclick="download()">
+        <input type="button" value="Download" class="btn" onclick="download()">
       </div>
     </div>
   </div>
